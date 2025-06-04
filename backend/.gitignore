@@ -1,0 +1,34 @@
+**/__pycache__/
+.pytest_cache/
+.venv/
+*.venv/
+*_venv/
+migrations/
+migrations.*/
+migrations_*/
+node_modules/
+instance/
+codebase.txt
+
+# env files (can opt-in for committing if needed)
+# Ignore all .env files...
+.env.*
+.env
+.flaskenv
+# ...but DO NOT ignore .env.example
+!.env.example
+!.flaskenv.example
+
+# Editor directories and files
+.vscode/
+.vscode/*
+.cursor/
+.cursor/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
