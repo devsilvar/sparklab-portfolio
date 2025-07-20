@@ -8,10 +8,10 @@ from flask import Flask, Blueprint
 
 def register_blueprints(app: Flask) -> None:
     
-    from .core.routes.api import api_bp, auth_bp, qrcode_bp, template_bp, scan_bp, payment_bp
+    from .core.routes.api import api_bp, auth_bp, payment_bp
     from .core.routes.api.admin import admin_api_bp
     
-    register_sub_blueprints(api_bp, [auth_bp, qrcode_bp, template_bp, scan_bp, payment_bp, admin_api_bp])
+    register_sub_blueprints(api_bp, [auth_bp, payment_bp, admin_api_bp])
     app.register_blueprint(api_bp)
     
     from .core.routes.debug import debug_bp

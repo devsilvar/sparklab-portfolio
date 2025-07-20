@@ -19,11 +19,10 @@ from .wallet import Wallet
 
 from .payment import Payment, Transaction
 from .subscription import Subscription, SubscriptionPlan
-from .defaults import create_default_admin, create_roles, create_default_templates
+from .defaults import create_default_admin, create_roles
 
 
 def create_db_defaults(app: Flask) -> None:
     with app.app_context():
         create_roles()
         create_default_admin()
-        create_default_templates()
