@@ -1,29 +1,23 @@
 **/__pycache__/
 .pytest_cache/
 .venv/
-*.venv/
-*_venv/
+tests/
+env/
+wsl_env/
 migrations/
-migrations.*/
-migrations_*/
-node_modules/
-instance/
-codebase.txt
-
-# env files (can opt-in for committing if needed)
-# Ignore all .env files...
-.env.*
+migrations_/
+migrations__/
+migrations-staging/
+migrations_local/
+migrations_live/
+**/dummy/
 .env
-.flaskenv
-# ...but DO NOT ignore .env.example
-!.env.example
-!.flaskenv.example
+backup_file.backup
+overview.md
 
 # Editor directories and files
 .vscode/
 .vscode/*
-.cursor/
-.cursor/*
 !.vscode/extensions.json
 .idea
 .DS_Store

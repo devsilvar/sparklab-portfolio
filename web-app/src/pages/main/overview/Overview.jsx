@@ -45,7 +45,7 @@ const Overview = () => {
 	};
 
 	return (
-		<div className="max-w-7xl mx-auto space-y-8">
+		<div className="w-site mx-auto space-y-8">
 			{/* Welcome Section */}
 			<div className="text-center space-y-4">
 				<h1 className="text-3xl font-bold text-gray-900">

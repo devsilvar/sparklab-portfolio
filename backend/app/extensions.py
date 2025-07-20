@@ -3,6 +3,9 @@ This module initializes the extensions used in the Flask application.
 
 It sets up SQLAlchemy, Flask-Mail, and Celery with the configurations defined in the Config class.
 
+@author: Emmanuel Olowu
+@link: https://github.com/zeddyemy
+@package: Estate Management
 '''
 
 from flask_cors import CORS
@@ -30,7 +33,7 @@ def initialize_extensions(app: Flask):
     mail.init_app(app) # Initialize Flask-Mail
     
     login_manager.init_app(app)
-    login_manager.login_view = 'web_front.login'
+    login_manager.login_view = 'panel.login'
     
     jwt = jwt_extended.init_app(app) # Setup the Flask-JWT-Extended extension
     app_cache.init_app(app)

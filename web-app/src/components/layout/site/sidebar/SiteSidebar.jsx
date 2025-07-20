@@ -1,6 +1,6 @@
 import { Link, useLocation, useParams } from "react-router-dom";
 import {
-	LayoutDashboard,
+	Home,
 	Settings,
 	FolderOpen,
 	Newspaper,
@@ -43,7 +43,7 @@ const data = {
 		{
 			title: "Dashboard",
 			url: "#",
-			icon: LayoutDashboard,
+			icon: Home,
 		},
 	],
 	navContents: [

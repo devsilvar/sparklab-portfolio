@@ -84,7 +84,7 @@ const CreateSite = () => {
 	};
 
   return (
-		<div className="max-w-2xl mx-auto">
+		<div className="w-site md:!max-w-2xl mx-auto">
 			<div className="mb-8">
 				<Button
 					variant="ghost"
